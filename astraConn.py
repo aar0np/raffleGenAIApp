@@ -25,7 +25,7 @@ def init_collection(table_name):
 async def get_names_by_vector(collection_name, vector_embedding, limit=1):
     init_collection(collection_name)
 
-    results = collection.vector_find(vector_embedding.tolist(), limit=limit, fields={"text","name","$vector"})
+    results = collection.vector_find(vector_embedding.tolist(), limit=limit, fields={"name","$vector"})
     return results
 
 async def put_doc(collection_name, document):
