@@ -1,0 +1,9 @@
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: black;">
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='web_images/datastax_logo.png')}}" height=40 class="image" />
+        </a>
+        <a class="navbar-brand" href="{{ url_for('index') }}">Enter names</a>
+        <a class="navbar-brand" href="{{ url_for('winners') }}">Pick winners</a>
+    </div>
+</nav>
